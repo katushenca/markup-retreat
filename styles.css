@@ -1,0 +1,29 @@
+.stars {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 100px;
+}
+
+.stars:hover .star {
+    background-image: url("img/star.svg");
+}
+
+.star {
+    float: right;
+    cursor: pointer;
+    background: url("img/star-empty.svg") no-repeat;
+    flex-basis: auto;
+    height: 40px;
+    width: 40px;
+    margin-right: 0;
+    display: inline-block;
+}
+
+.star:hover {
+    background: url('img/star.png') no-repeat;
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star-empty.svg");
+}
